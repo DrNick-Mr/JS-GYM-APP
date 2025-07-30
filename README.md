@@ -10,7 +10,6 @@
 
 1.  **Clone the repository:**
     `git clone [your-repo-link]`
-    `cd HIIT-up2112651`
 2.  **Install dependencies (if you have a `package.json` for a Node.js backend or dev tools):**
     `npm install` (or `yarn install`)
 3.  **Start the server (if applicable):**
