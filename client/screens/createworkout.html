@@ -1,0 +1,22 @@
+<div class="createMenu">
+  <label for="workoutTitle">Name your workout: <input type="text" id="workoutTitle" required></label>
+  <input id="addTitle" type="submit" value="Add workout name!">
+  <label for="select-exercise">Choose an exercise: </label>
+  <select name="exercises" id="select-exercise">
+    <option value="" disabled selected hidden> Select an exercise...</option>
+    <option value="exercise2" exercise-description="keep your arms at your sides. Begin jogging in place, lifting your knees as high as you can.
+        try to lift your knees to hip level but keep the core tight to support your back" exercise-time="2">High Knees</option>
+  </select>
+  <input id="addExercise" type="submit" value="Add Exercise!">
+  <button class="button" id="showCustomBox" type="button">Add a custom exercise!</button>
+</div>
+
+
+<div class="createExercise">
+  <h3>Add a Custom Exercise!</h3>
+  <label for="exerciseName">Name your exercise: <input type="text" id="exerciseName" required></label>
+  <label for="exerciseDescription">Describe your exercise:<input type="text" id="exerciseDescription" required ></label>
+  <label for="exerciseTime">Exercise time in minutes:<input type="number" id="exerciseTime" required ></label>
+  <input id="createExercise" type="submit" value="Add exercise!">
+  <button class="button" id="hideCustomBox" type="button">Hide me!</button>
+</div>

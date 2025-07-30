@@ -1,0 +1,362 @@
+*,
+html {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure body takes at least the height of the viewport */
+    font-size: larger;
+}
+
+header,
+main {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.screen {
+    text-align: center;
+}
+
+header>h1 {
+    text-align: center;
+    background-color: rgb(4, 95, 37);
+    margin: 0;
+    /* Remove default margin */
+    padding: 0.5em;
+    /* Add padding for better spacing */
+}
+
+nav {
+    margin: 1.25em;
+    padding: 1.25em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #f9f9f9;
+    /* Light background color */
+    display: flex;
+    /* Use flexbox to align items */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+}
+
+nav>button {
+    background-color: #4caf50;
+    /* Button background color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Remove button border */
+    padding: 0.625em 1.25em;
+    /* Add padding */
+    margin-right: 0.625em;
+    /* Add margin between buttons */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+nav>button:hover {
+    background-color: #45a049;
+    /* Darken button color on hover */
+}
+
+/* Media query for phone view */
+@media screen and (max-width: 30em) {
+    nav {
+        flex-direction: column;
+        /* Change flex direction to column */
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    nav>button {
+        margin-right: 0;
+        /* Remove margin between buttons */
+        margin-bottom: 0.625em;
+        /* Add margin below buttons */
+        width: 100%;
+        /* Make buttons full width */
+    }
+}
+
+.timer {
+    margin: 1.25em;
+    padding: 1.25em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.timer h2 {
+    margin-bottom: 0.625em;
+}
+
+.timer h3 {
+    margin-top: 0;
+    margin-bottom: 0.9375em;
+}
+
+.timer p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.9375em;
+}
+
+.timer button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0.3125em;
+    padding: 0.625em 1.25em;
+    margin-right: 0.625em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.timer button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    /* Push footer to the bottom of the page */
+    background-color: rgb(4, 95, 37);
+    /* Example background color */
+    color: white;
+    /* Example text color */
+    padding: 0.3125em;
+    /* Example padding */
+    text-align: center;
+}
+
+.createMenu {
+    margin: 1.25em;
+    padding: 1.25em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #f9f9f9;
+}
+
+.createMenu label {
+    display: block;
+    margin-bottom: 0.625em;
+}
+
+.createMenu input[type="text"],
+.createMenu input[type="submit"],
+.createMenu select {
+    width: 100%;
+    padding: 0.625em;
+    margin-bottom: 0.9375em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+}
+
+.createMenu input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+.createMenu input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Style select dropdown */
+.createMenu select {
+    background-color: white;
+}
+
+/* Optional: Style select dropdown arrow */
+.createMenu select::-ms-expand {
+    display: none;
+}
+
+.createMenu select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23444" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" width="10" height="10"><path d="M5.4 7.2L1.8 3.6h6.7L5.4 7.2z"/></svg>');
+    /* URL is the arrow within the select-exercise menu*/
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%;
+    background-size: 0.65em auto;
+}
+
+.createExercise {
+    margin: 1.25em;
+    padding: 1.25em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #f9f9f9;
+}
+
+.createExercise h3 {
+    margin-bottom: 0.9375em;
+}
+
+.createExercise label {
+    display: block;
+    margin-bottom: 0.625em;
+}
+
+.createExercise input[type="text"],
+.createExercise input[type="number"],
+.createExercise input[type="submit"] {
+    width: 100%;
+    padding: 0.625em;
+    margin-bottom: 0.9375em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+}
+
+.createExercise input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+.createExercise input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.workoutCreation {
+    margin: 1.25em;
+    padding: 1.25em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #f9f9f9;
+}
+
+.workout {
+    margin: 1.25em;
+    padding: 1.25em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #f9f9f9;
+}
+
+.workoutCreation h2 {
+    margin-bottom: 0.9375em;
+}
+
+.workoutCreation p {
+    margin-bottom: 0.625em;
+}
+
+.workoutCreation button {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.625em 1.25em;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+}
+
+.workoutCreation button:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Style individual exercise paragraphs */
+.workoutCreation p {
+    padding: 0.3125em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #fff;
+}
+
+.workout ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.workout li {
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #fff;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
+    font-weight: normal;
+}
+
+.workout button {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.625em 1.25em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+}
+
+.workout button:hover {
+    background-color: #45a049;
+}
+
+.homePage {
+    margin: 1.25em;
+    padding: 1.25em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.homePage h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 0.625em;
+}
+
+.homePage p {
+    color: #666;
+    font-size: 1.125em;
+    margin-top: 0;
+}
+
+ol {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+a {
+    color: #009933; /* Adjust the color as needed */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

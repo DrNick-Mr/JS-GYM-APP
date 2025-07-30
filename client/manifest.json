@@ -1,0 +1,15 @@
+{
+    "id": "p",
+    "name": "HiitApp",
+    "description": "Progressive web app",
+    "start_url": "index.html",
+    "display": "standalone",
+    "icons":[
+        {
+            "src":"logo.png",
+            "sizes":"225x225",
+            "type":"image/png",
+            "purpose":"any"
+        }
+    ]
+}
