@@ -3,7 +3,7 @@
 ## Technologies Used
 
 * **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES Modules)
-* **Backend (implied/API interaction):** Node.js/Express (assuming this based on API structure), MongoDB (or other database used)
+* **Backend (implied/API interaction):**
 * **Tools:** Git, GitHub
 
 ## How to Run Locally
